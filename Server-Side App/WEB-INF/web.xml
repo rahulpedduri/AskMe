@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>edu.mad.project.Login</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddUser</servlet-name>
+        <servlet-class>edu.mad.project.AddUser</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddMessage</servlet-name>
+        <servlet-class>edu.mad.project.AddMessage</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServiceMessage</servlet-name>
+        <servlet-class>edu.mad.project.ServiceMessage</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Service</servlet-name>
+        <servlet-class>edu.mad.project.Service</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>MLogin</servlet-name>
+        <servlet-class>edu.mad.project.MLogin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddUser</servlet-name>
+        <url-pattern>/AddUser</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddMessage</servlet-name>
+        <url-pattern>/AddMessage</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServiceMessage</servlet-name>
+        <url-pattern>/ServiceMessage</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Service</servlet-name>
+        <url-pattern>/Service</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MLogin</servlet-name>
+        <url-pattern>/MLogin</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            300
+        </session-timeout>
+    </session-config>
+    <context-param>
+        <description>database driver</description>
+        <param-name>db.driver</param-name>
+        <param-value>oracle.jdbc.driver.OracleDriver</param-value>
+    </context-param>
+    <context-param>
+        <description>url required to connect to database.</description>
+        <param-name>db.url</param-name>
+        <param-value>jdbc:oracle:thin:@localhost:1521:</param-value>
+    </context-param>
+    <context-param>
+        <description>the database schema..</description>
+        <param-name>db.database</param-name>
+        <param-value>XE</param-value>
+    </context-param>
+    <context-param>
+        <description>username of the schema</description>
+        <param-name>db.username</param-name>
+        <param-value>rahul</param-value>
+    </context-param>
+    <context-param>
+        <description>password of the schema</description>
+        <param-name>db.password</param-name>
+        <param-value>tiger</param-value>
+    </context-param>
+</web-app>
