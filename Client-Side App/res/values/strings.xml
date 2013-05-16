@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PhoneQuery</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Welcome New User</string>
+    <string name="UserRegistration">User Registration</string>
+    <string name="UserName">Username</string>
+    <string name="Password">Password</string>
+    <string name="Confirm">Confirm</string>
+    <string name="Submit">Submit</string>
+    <string name="Login">Login Page</string>
+    <string name="Registerbutton">Register</string>
+    <string name="title_activity_registration">RegistrationActivity</string>
+    <string name="title_activity_history">HistoryActivity</string>
+    <string name="title_activity_new_user">NewUserActivity</string>
+
+</resources>
